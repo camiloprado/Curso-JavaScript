@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            color: white;
+            font: normal 20pt Arial;
+            background-color: rgb(2, 162, 255);
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+        var nome = window.prompt('Qual o seu nome?')
+        document.write(`Olá! <strong>${nome}</strong>.<br/>`)
+        document.write(`Seu nome tem <strong>${nome.length}</strong> letras.<br/>`)
+        document.write(`Seu nome em maiúsculo é <strong>${nome.toUpperCase()}</strong> e minúsculo é <strong>${nome.toLowerCase()}</strong>.<br/>`)
+        var n1 = 1545.6
+        document.write(`${n1}<br/>`)
+        document.write(`${n1.toFixed(2)}<br/>`)
+        document.write(n1.toFixed(2).replace('.', ','))
+        document.write(`<br/>${n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}<br/>`)
+        document.write(`${n1.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'})}<br/>`)
+        document.write(`${n1.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'})}<br/>`)
+
+    </script>
+</body>
+</html>
