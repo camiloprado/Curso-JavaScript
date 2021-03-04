@@ -21,8 +21,19 @@
     <h1>Olá, Mundo!</h1>
     <p>Já me livrei da maldição!</p>
     <script>
-        var nome = window.prompt('Qual o seu nome?')
-        window.alert('Prazer em conhece-lo, ' + nome + '!')
+        var n1 = window.prompt('Digite um número: ')
+        var n2 = window.prompt('Digite outro número: ')
+        var s = Number(n1)  + Number(n2)
+        window.alert('A soma de ' + n1 + ' + ' + n2 + ' é = ' + s + '!')
+        window.alert(`A soma de ${n1} + ${n2} é = ${s}!`)
+        // string + string = concatenuação
+        //n.toString()
+        //String(n)
+        /* s.lengh - Conta os caracteres das strings
+           s.toUpperCase() - Joga todos os caracteres para letras maiúsculas
+           s.toLowerCase() - Joga todos os caracteres para letras minúsculas
+        */
+       
     </script>
 </body>
 </html>
